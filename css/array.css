@@ -1,0 +1,22 @@
+h1.encabezado {
+    text-align: center;
+}
+input {
+    display: block;
+}
+
+body {
+    background-color: aliceblue;
+}
+div.bloqueintroducir {
+    border-radius: 10px;
+    background-color: coral;
+    margin-bottom: 3%;
+    padding: 2%;
+}
+
+div.bloquealeatorio {
+    border-radius: 10px;
+    background-color: aquamarine;
+    padding: 2%;
+}

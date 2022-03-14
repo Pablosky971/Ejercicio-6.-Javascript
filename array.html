@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array de números</title>
+    <link rel="stylesheet" href="css/array.css">
+    <script type="text/javascript" src="js/array.js"></script>
+</head>
+<body>
+    <header>
+        <h1 class="encabezado"> Array de números</h1>
+    </header>
+
+    <main>
+       
+        <div class="bloqueintroducir">
+        <form>
+            <label for="introducir"> Indica aquí el número que desee añadir</label>
+            <input id="introducir" type="number" name="introducir" min="0" step="1" required/>
+            <input type="button" value="Introducir" onclick="introducir()"/>
+        </div>
+        
+        </form>
+        
+        <div class="bloquealeatorio">
+        <form>
+            
+                <label for="aleatorio"> Pulsa este botón para extraer un número aleatorio del array</label>
+                <input id="aleatorio" type="button" name="aleatorio" value="Extraer" onclick="aleatorio()"/> 
+                </div>
+        </form>
+    </div>
+
+    </main>
+</body>
+</html>
