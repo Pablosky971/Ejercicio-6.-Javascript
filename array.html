@@ -16,15 +16,14 @@
     <main>
        
         <div class="bloqueintroducir">
-        <form>
+        
             <label for="introducir"> Indica aquí el número que desee añadir</label>
-            <input id="introducir" type="number" name="introducir" min="0" step="1" required/>
-            <button onclick="introducirArray()"  class="introducir"> Introducir </button>
+            <input id="introducir" type="number" name="introducir"  min="1" step="1" required/>
+            <button onclick="intro()" class="introducir"> Introducir </button>
 
             
         </div>
         
-        </form>
         
         <div class="bloquealeatorio">
      
@@ -32,7 +31,7 @@
                 <button onclick="aleatorio()"  class="aleatorio"> Extraer número aleatorio </button>
                 
                 <label for="extraido">Número extraido</label>
-                <input id="extraido" type="text">
+                <input id="extraido" type="text" name="extraido" class="extraido">
 
        
     </div>

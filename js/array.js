@@ -1,31 +1,19 @@
-array=[]
+array = [];
 
-
-function introducirArray() {
-
-    let n = parseInt(introducir.value)
-    array.push(n)
-    
-
-}
-
-function mostrarArray() {
-
-    arrayTexto.value=array.join("-")
+function intro() {
+    n = parseInt(introducir.value);
+    console.log("Valor de n: " + n);
+    array.push(n);
+    console.log(array)
 }
 
 function aleatorio() {
+    index = Math.round(Math.random() * (array.length-1) );
+    valor = array[index];
 
-    
- 
-    let index = Math.round((Math.random) * array.length());
 
-    if(index == undefined) {
-        index = array.length()
-    }
+    extraido.value=valor;
 
-    let nAleatorio=array[index]
-    
-    extraido.value=nAleatorio
+
     
 }
