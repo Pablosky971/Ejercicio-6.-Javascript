@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,18 +19,22 @@
         <form>
             <label for="introducir"> Indica aquí el número que desee añadir</label>
             <input id="introducir" type="number" name="introducir" min="0" step="1" required/>
-            <input type="button" value="Introducir" onclick="introducir()"/>
+            <button onclick="introducirArray()"  class="introducir"> Introducir </button>
+
+            
         </div>
         
         </form>
         
         <div class="bloquealeatorio">
-        <form>
+     
             
-                <label for="aleatorio"> Pulsa este botón para extraer un número aleatorio del array</label>
-                <input id="aleatorio" type="button" name="aleatorio" value="Extraer" onclick="aleatorio()"/> 
-                </div>
-        </form>
+                <button onclick="aleatorio()"  class="aleatorio"> Extraer número aleatorio </button>
+                
+                <label for="extraido">Número extraido</label>
+                <input id="extraido" type="text">
+
+       
     </div>
 
     </main>

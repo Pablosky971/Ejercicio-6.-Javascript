@@ -1,25 +1,31 @@
 array=[]
 
-function introducir() {
 
-    var valorintro= introducir.value()
-    parseInt(valorintro)
-    array.push("valorintro")
+function introducirArray() {
 
+    let n = parseInt(introducir.value)
+    array.push(n)
+    
+
+}
+
+function mostrarArray() {
+
+    arrayTexto.value=array.join("-")
 }
 
 function aleatorio() {
 
-    var nAleatorio
-    var longitud = array.length()
-    var index = Math.round(Math.random * 100) * array.length();
+    
+ 
+    let index = Math.round((Math.random) * array.length());
 
     if(index == undefined) {
         index = array.length()
     }
 
-    nAleatorio=array["index"]
+    let nAleatorio=array[index]
     
-    return nAleatorio
+    extraido.value=nAleatorio
     
 }

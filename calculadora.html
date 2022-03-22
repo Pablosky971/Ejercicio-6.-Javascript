@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="css/calculadora.css">
+    <script type="text/javascript" src="js/calculadora.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Calculadora</h1>
+        <h3>Indique los dos números con los que quiere operar y señale la operación matemática pulsando en algunos de los botones.</h3>
+      </header>
+    <main>
+       
+        <nav>
+            <form class="numeros">
+              <label for="numero1">Primer número </label>
+              <input id=numero1 type="number" name="numero1" min="0" step="1" required>
+              <label for="numero2">Segundo número </label>
+              <input id="numero2" type="number" name="numero2" min="0" step="1" required>
+            
+              <div class="botones">
+              <a onclick="sumar()" class="sumar"><img src="img/suma.png" alt="Pulsa aquí si quiere sumar" class="suma"></a>
+              <a  onclick="restar()" class="restar"><img src="img/resta.png"  alt="Pulsa aquí si quiere restar" class="resta"></a>
+              <a onclick="multiplicar()" class="multiplicar"><img src="img/multiplicar.png"  alt="Pulsa aquí si quiere multiplicar" class="multiplica"></a>
+              <a onclick="dividir()" class="dividir"><img src="img/dividir.png"  alt="Pulsa aquí si quiere dividir" class="divide"></a>
+            </div>
+            
+              <label for="solucion"> Solución </label>
+              <input id="solucion" type="text" name="solucion">
+            
+            </form>
+            </nav>
+    </main>
+</body>
+</html>
